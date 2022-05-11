@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o número</title>
+</head>
+<body>
+    <main>
+        <div id="welcomeScreen">
+            <h2>Adivinhe o número aleatório<br>entre 1-100</h2>
+            <section>
+                <p>Selecione um nível de dificuldade:</p>
+                <div class="button-wrapper">
+                    <button>Fácil: 10 tentativas</button>
+                    <button>Difícil: 5 tentativas</button>
+                </div>
+            </section>
+        </div>
+        <div id="gameArea">
+            <button id="newGameButton">Novo Jogo</button>
+            <section>
+                <h3 id="textOutput">Seu palpite:</h3>
+                <input type="number" id="inputBox" min="1" max="100">
+            </section>
+            <section>
+                <p>Intervalo atual:</p>
+                <span id="rangeOutput">1 - 100</span>
+                <div id="range">
+                    <span id="low"></span>
+                    <span id="space"></span>
+                    <span id="high"></span>
+                </div>
+            </section>
+            <section class="stats">
+                <div class="info">
+                    <p>Número de tentativas feitas:</p>
+                    <span id="attempts">0</span>
+                </div>
+                <div class="info">
+                    <p>Seus palpites anteriores:</p>
+                    <span id="guesses">-</span>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
