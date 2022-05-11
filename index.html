@@ -7,15 +7,15 @@
     <title>Adivinhe o número</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="init()">
     <main>
         <div id="welcomeScreen">
             <h2>Adivinhe o número aleatório<br>entre 1-100</h2>
             <section>
                 <p>Selecione um nível de dificuldade:</p>
                 <div class="button-wrapper">
-                    <button>Fácil: 10 tentativas</button>
-                    <button>Difícil: 5 tentativas</button>
+                    <button onclick="easyMode()">Fácil: 10 tentativas</button>
+                    <button onclick="hardMode()">Difícil: 5 tentativas</button>
                 </div>
             </section>
         </div>
@@ -46,5 +46,6 @@
             </section>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
